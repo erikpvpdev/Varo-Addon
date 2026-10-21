@@ -1,0 +1,43 @@
+{
+	"type": "minecraftBedrock",
+	"name": "Varo",
+	"namespace": "varo",
+	"authors": [
+		"ErikPvP,https://discord.gg/xftZYKuN6C"
+	],
+	"targetVersion": "1.26.0",
+	"description": "Varo Addon by Cuuky recreated  ",
+	"experimentalGameplay": {
+		"upcomingCreatorFeatures": false,
+		"experimentalCreatorCameraFeatures": false,
+		"enableGameTestFramework": false,
+		"renderDragonFeatures": false,
+		"educationEdition": false
+	},
+	"bdsProject": false,
+	"packs": {
+		"behaviorPack": "./BP"
+	},
+	"worlds": [
+		"./worlds/*"
+	],
+	"compiler": {
+		"plugins": [
+			"generatorScripts",
+			"typeScript",
+			"entityIdentifierAlias",
+			"customEntityComponents",
+			"customItemComponents",
+			"customBlockComponents",
+			"customCommands",
+			"moLang",
+			"formatVersionCorrection",
+			[
+				"simpleRewrite",
+				{
+					"packName": "Varo"
+				}
+			]
+		]
+	}
+}
